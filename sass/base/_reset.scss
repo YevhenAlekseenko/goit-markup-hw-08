@@ -12,3 +12,13 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+section,
+footer,
+header {
+  display: none;
+}
+
+.block {
+  display: block;
+}
