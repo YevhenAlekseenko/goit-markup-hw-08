@@ -36,7 +36,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.hero-button, .submit, .button-form {
+.submit, .button-form {
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -358,14 +358,25 @@ body.modal-open {
   }
 }
 
-.hero-button {
+.hero__button {
   display: block;
-  border: 0;
   border-radius: 4px;
-  padding: 10px 30px;
+  border: transparent;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero__button:hover, .hero__button:focus {
+  background-color: #188ce8;
 }
 
 .section-benefits {
@@ -1074,6 +1085,10 @@ body.modal-open {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.submit:hover, .submit:focus {
+  background-color: #188ce8;
+}
+
 .telegram-icon {
   margin-left: 10px;
   fill: var(--primary-white-color);
@@ -1258,7 +1273,7 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -1421,6 +1436,10 @@ body.modal-open {
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.current {
   color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */
