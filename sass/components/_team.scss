@@ -1,0 +1,96 @@
+.team-section {
+  @include section();
+  background-color: var(--secondary-background-color);
+
+  @media screen and (min-width: 1200px) {
+    @include section($top: 94px, $bottom: 94px);
+  }
+}
+
+.team-container__title {
+  @include title();
+  @media screen and (min-width: 1200px) {
+    @include title($size: 36px, $height: calc(42 / 36));
+  }
+}
+.team {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+    &__item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__item {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.team__img {
+  width: 100%;
+}
+.team__item {
+  margin-top: 30px;
+}
+.team__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  background-color: var(--primary-white-color);
+}
+.team__title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team__text {
+  margin-top: 10px;
+
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.socials__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  fill: var(--color-icons);
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--primary-white-color);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

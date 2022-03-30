@@ -1,14 +1,34 @@
 .logo {
-  padding-top: 25px;
-  padding-bottom: 24px;
-
-  color: #000000;
-  font-family: 'Raleway', cursive;
+  display: block;
+  color: var(--accent-color);
+  font-family: Raleway;
+  // font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
-.logo__web {
-  color: var(--accent-color);
+
+.logo--header {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  & span {
+    color: var(--black-color);
+  }
+}
+
+.logo__footer {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+  & span {
+    color: var(--primary-white-color);
+  }
 }

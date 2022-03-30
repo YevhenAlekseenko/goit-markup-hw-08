@@ -3,3 +3,20 @@
   align-items: center;
   justify-content: center;
 }
+
+%button {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+%section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

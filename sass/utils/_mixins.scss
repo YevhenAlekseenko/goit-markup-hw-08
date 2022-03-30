@@ -1,0 +1,11 @@
+@mixin title($size: 28px, $height: calc(33 / 28)) {
+  text-align: center;
+  font-weight: bold;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: 0.03em;
+}
+@mixin section($top: 60px, $bottom: 60px) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
