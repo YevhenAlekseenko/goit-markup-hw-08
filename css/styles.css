@@ -1,10 +1,3 @@
-/* Prymery background color #e5e5e5 */
-/* secondary background color #F5F4FA */
-/* Titltle color #212121*/
-/* Secondary color #757575 */
-/* acсent color #2196F3 */
-/* color white #ffffff */
-
 :root {
     --background-color: #ffffff;
     --secondary-background-color: #f5f4fa;
@@ -68,7 +61,6 @@ p {
 
 .container {
     display: flex;
-    /* outline: 1px solid tomato; */
     box-sizing: border-box;
     width: 1200px;
     padding-left: 15px;
@@ -82,7 +74,6 @@ p {
     padding-bottom: 94px;
 }
 
-/* ---------- Хедер ---------- */
 .header {
     background-color: var(--background-color);
     border-bottom: 1px solid var(--secondary-background-color);
@@ -95,7 +86,6 @@ p {
     display: flex;
 }
 
-/* ---------- Лого ---------- */
 .logo,
 .logo-footer {
     color: var(--accent-color);
@@ -114,18 +104,11 @@ p {
     color: var(--black-logo-color);
 }
 
-/* ---------- Ссылки ---------- */
 .site-nav {
     display: flex;
     align-items: center;
     margin-left: 93px;
 }
-
-/* Алтернативный вариант: .site-nav .item + .item { 
-  margin-left 50px}
-  применится margin-left
-  только к тем, у кого есть сосед сверху в списке
-  */
 
 /* Применяется ко всему списку кроме последнего */
 .site-nav__item:not(:last-child) {
@@ -212,7 +195,6 @@ p {
 .contact-list__icon:focus {
     fill: var(--accent-color);
 }
-/* ---------- СТУДИЯ ---------- */
 
 /* ---------- Герой ---------- */
 
